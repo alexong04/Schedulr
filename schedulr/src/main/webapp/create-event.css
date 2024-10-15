@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Istok Web', 'Libre Franklin';
+  background-color: #264653;
+}
+
+form {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notification {
+  background-color: #E9C46A;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.notification h1 {
+  color: #2A9D8F;
+  margin-top: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  color: #2A9D8F;
+}
+
+p {
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #E76F51;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #F4A261;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #F4A261;
+}
+
+a:hover {
+  color: #F4A261;
+}
+
+#isInd,
+#isOnl,
+#Repeating {
+  background-color: white;
+}
+
+input[type="text"],
+select,
+input[type="date"],
+input[type="time"],
+input[type="submit"] {
+  padding: 10px;
+}
+

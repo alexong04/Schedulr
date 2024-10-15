@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>LoginDemonTomcat9</display-name>
+  
+  <!-- LOGIN -->
+   <servlet>
+  	<servlet-name>loginprocess</servlet-name>
+  	<servlet-class>com.schedulr.LoginHandler</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginprocess</servlet-name>
+  	<url-pattern>/process-login</url-pattern>
+  </servlet-mapping>
+  
+  <!-- REGISTRATION -->
+  <servlet>
+  	<servlet-name>registration</servlet-name>
+  	<servlet-class>com.schedulr.RegisterHandler</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>registration</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MAIN MENU -->
+  <servlet>
+  	<servlet-name>eventsprocess</servlet-name>
+  	<servlet-class>com.schedulr.EventsHandler</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>eventsprocess</servlet-name>
+    <url-pattern>/events-process</url-pattern>
+  </servlet-mapping>
+  
+  <!-- CREATE EVENT -->
+  <servlet>
+  	<servlet-name>create-event</servlet-name>
+  	<servlet-class>com.schedulr.CreateEvent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>create-event</servlet-name>
+    <url-pattern>/create-event</url-pattern>
+  </servlet-mapping>
+  
+  <!-- JOIN EVENT -->
+  
+  <servlet>
+  	<servlet-name>join-event</servlet-name>
+  	<servlet-class>com.schedulr.JoinEvent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>join-event</servlet-name>
+    <url-pattern>/join-event</url-pattern>
+  </servlet-mapping>
+  
+  <!-- DELETE EVENT -->
+  <servlet>
+  	<servlet-name>delete-event</servlet-name>
+  	<servlet-class>com.schedulr.DeleteEvent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>delete-event</servlet-name>
+    <url-pattern>/delete-event</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

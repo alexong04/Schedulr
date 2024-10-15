@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap');
+
+body {
+  font-size: 20px;
+  background-color: #264653;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin: 50px auto;
+  padding: 100px;
+  max-width: 500px;
+  background-color: #FFF;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.notification {
+  background-color: #E9C46A;
+  padding: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+.header {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  color: #2A9D8F;
+  margin: 0;
+}
+
+.content {
+  font-family: 'Istok Web', sans-serif;
+  background-color: white;
+  padding: 10px;
+}
+
+.trigger-warning {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  font-family: 'Libre Franklin', sans-serif;
+  display: block;
+  background-color: #E76F51;
+  color: #FFF;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: #D9563F;
+}

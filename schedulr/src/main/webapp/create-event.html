@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Event</title>
+<link rel="SCHEDULAR Icon" type="png" href="Schedulr.png">
+<link rel="stylesheet" href="create-event.css">
+
+</head>
+<body>
+	<form action="create-event" method="post">
+		<div class="notification">
+			<h1>Enter Event Details</h1>
+		</div>
+		<p>Name: <input type="text" name="eventName" required></p><br>
+		
+		<p>Type: <br>
+		
+		<select id="isInd" name="isInd" required>
+			<option value="true">Individual</option>
+			<option value="false">Group</option>
+		</select><br>
+		
+		 <select id="isOnl" name="isOnl" required>
+			<option value="true">Online</option>
+			<option value="false">Face-to-face</option>
+		</select> </p>
+		
+		<p>Location: <input type="text" name="Loc" required></p> <br>
+		
+		<p>Date: <input type="date" id="Date" name="Date" required></p> 
+		
+		<p>Start Time: <input type="time" id="startTime" name="startTime" required></p>
+		 
+		<p>End Time: <input type="time" id="stopTime" name="stopTime" required></p>
+		<br> 
+		<p>Repeat: <select id="Repeating" name="Repeating" required>
+			<option value="-1">Not Repeating</option>
+			<option value="0">Sundays</option>
+			<option value="1">Mondays</option>
+			<option value="2">Tuesdays</option>
+			<option value="3">Wednesdays</option>
+			<option value="4">Thursdays</option>
+			<option value="5">Fridays</option>
+			<option value="6">Saturdays</option>
+		</select></p>
+		
+		<p>If repeating, Enter date which repeating event stops: <br> (If not repeating, Enter same date)</p>
+		<input type="date" id="stopDate" name="stopDate" required> <br><br><br>
+		
+		<input type="submit" value="CREATE">
+		
+		<br><br><a href="main-menu.jsp">Return to Main Menu</a><br>
+		<a href="index.jsp">Log out</a>
+	</form>
+</body>
+</html>
